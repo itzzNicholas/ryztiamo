@@ -14,14 +14,18 @@
 </body>
 
 <body>
-    <button onclick="playAudio()">PREMI PER FARE CUDDLES IHIHIHA</button>
-    <audio id="audioSource" src="https://archive.org/download/IZECOLDClosefeat.MollyAnnNCSRelease/IZECOLD%20-%20Close%20%28feat.%20Molly%20Ann%29%20%5BNCS%20Release%5D.mp3" controls preload="none"></audio>
-    <script>
-      function playAudio() {
-        var audio = document.getElementById("audioSource");
+  <button onclick="playAudio()">PREMI PER FARE CUDDLES IHIHIHA</button>
+  <audio id="audioSource" src="https://archive.org/download/IZECOLDClosefeat.MollyAnnNCSRelease/IZECOLD%20-%20Close%20%28feat.%20Molly%Ann%29%20%5BNCS% Release%5D.mp3" controls preload="metadata"></audio>
+  <script>
+    function playAudio() {
+      var audio = document.getElementById("audioSource");
+      audio.addEventListener('loadedmetadata', function() {
+        audio.currentTime = 238; // Seeking to 2:38 (in seconds)
         audio.play();
-      }
-    </script>
-  </body>
+      });
+    }
+  </script>
+</body>
+
 
 </html>
