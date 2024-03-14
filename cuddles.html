@@ -14,13 +14,14 @@
 </body>
 
 <body>
-    <button onclick="playAudio()">PREMI PER AUTORIZZARE A FARE CUDDLES</button>
+    <button onclick="playAudio()">PREMI PER FARE CUDDLES IHIHIHA</button>
+    <audio id="audioSource" src="https://archive.org/download/IZECOLDClosefeat.MollyAnnNCSRelease/IZECOLD%20-%20Close%20%28feat.%20Molly%20Ann%29%20%5BNCS%20Release%5D.mp3" controls preload="none"></audio>
     <script>
       function playAudio() {
-        var audio = new Audio('https://archive.org/download/IZECOLDClosefeat.MollyAnnNCSRelease/IZECOLD%20-%20Close%20%28feat.%20Molly%20Ann%29%20%5BNCS%20Release%5D.mp3');
+        var audio = document.getElementById("audioSource");
         audio.play();
       }
     </script>
-</body>
+  </body>
 
 </html>
