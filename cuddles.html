@@ -9,20 +9,18 @@
     <p>ti scongiuro ho una voglia pazzesca di fare cuddles<3</p>
     <p>coccolami ">~<" </p>
     <IMG SRC="https://i0.wp.com/gifdb.com/images/high/anime-kiss-boys-inlove-d0q0uh641vcrrhkl.gif?fit=960%2C960&ssl=1">
+
+
 </body>
+
 <body>
-    <audio id="myAudio" src="your_audio.mp3" controls>
-      Your browser does not support the audio element.
-    </audio>
-    <button id="playButton">PREMI SE ANCHE TU VUOI FARE CUDDLES OWOWOW</button>
+    <button onclick="playAudio()">PREMI PER AUTORIZZARE A FARE CUDDLES</button>
     <script>
-      var audio = document.getElementById("myAudio");
-      var playButton = document.getElementById("playButton");
-  
-      playButton.addEventListener("click", function() {
-        audio.currentTime = 78;
+      function playAudio() {
+        var audio = new Audio('https://archive.org/download/IZECOLDClosefeat.MollyAnnNCSRelease/IZECOLD%20-%20Close%20%28feat.%20Molly%20Ann%29%20%5BNCS%20Release%5D.mp3');
         audio.play();
-      });
+      }
     </script>
-  </body>
+</body>
+
 </html>
